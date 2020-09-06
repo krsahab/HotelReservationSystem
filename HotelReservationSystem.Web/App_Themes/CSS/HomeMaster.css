@@ -1,0 +1,25 @@
+﻿body {
+    /*background-image:url("https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/itCjTBE/blue-smooth-flowing-waves-on-light-background-video-animation-hd-1920x1080_v1gtgzrrzg__F0008.png");*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url("https://data.tiendarollmachine.com/wp-content/uploads/2016/08/elegant-background-grey-illumination-wallpaper-e1361566509172.jpg");
+    background-size: cover;
+}
+
+header {
+    margin-bottom: 0px;
+    background-color: rgba(48, 113, 113, 0.30);
+    font-family: 'Audiowide';
+    color:antiquewhite;
+}
+
+footer {
+    margin-bottom: 0px;
+    margin-top: 10px;
+    height: 100px;
+    display: inline-table;
+    width: 100%;
+    font-family: 'Bigshot One';
+    font-size: x-large;
+    background-color: rgba(0, 0, 0, 0.80);
+}

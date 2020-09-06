@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Home.master.cs" Inherits="HotelReservationSystem.Web.Home.Home" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>Home</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="../App_Themes/CSS/bootstrap.min.css" rel="stylesheet" />
+    <link href="../App_Themes/CSS/bootstrap-theme.min.css" rel="stylesheet" />
+    <script src="../Script/jquery-3.3.1.slim.min.js"></script>
+    <script src="../Script/popper.min.js"></script>
+    <script src="../Script/bootstrap.min.js"></script>
+    <link href="../App_Themes/CSS/HomeMaster.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Audiowide' rel='stylesheet' />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <header class="jumbotron-fluid text-center">
+            <div class="row">
+                <div class="col-lg-2 text-center" style="display: inline-table; height: 150px">
+                    <div style="display: table-cell; vertical-align: middle;">
+                        <a href="Home.aspx">
+                            <img src="../Image/hotel.png" width="150" height="150" class="mx-auto d-block img-fluid" alt="Logo" aria-live="off" />
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-8" style="display: inline-table; height: 150px;">
+                    <div style="display: table-cell; vertical-align: middle;">
+                        <h1 style="color: black">Hotel Reservation System</h1>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <div style="min-height:65vh">
+            <asp:ContentPlaceHolder ID="HomeMaster" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+        <div class="container">
+            <div class="modal fade" id="AboutUs">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header bg-info">
+                            <h4 class="modal-title" style="text-align: center;">About US</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body" style="background-color: lightcyan;">
+                            <asp:Label ID="AboutUsLabel" runat="server" Text="Hotel Reservation System made by Kumar Sahab"></asp:Label>
+                        </div>
+                        <div class="modal-footer" style="background-color: lightcyan;">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="modal fade" id="Contact">
+                <div class="modal-dialog modal-sm">
+                    <div class="modal-content">
+                        <div class="modal-header bg-info">
+                            <h4 class="modal-title" style="text-align: center;">Contact</h4>
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                        </div>
+                        <div class="modal-body" style="background-color: lightcyan;">
+                            <asp:Label ID="Label1" runat="server">
+                                <a href="https://kumarsahab.azurewebsites.net/" target="blank">https://kumarsahab.azurewebsites.net/</a>
+                            </asp:Label>
+                        </div>
+                        <div class="modal-footer" style="background-color: lightcyan;">
+                            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer class="jumbotron-fluid text-white text-center">
+            <div style="display: table-cell; vertical-align: middle;">&copy MyWebsite</div>
+        </footer>
+    </form>
+</body>
+</html>
