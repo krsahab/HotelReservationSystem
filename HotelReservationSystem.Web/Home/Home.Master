@@ -18,7 +18,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
-<body>
+<body style="background-image:url('../Image/bck.png')">
     <form id="form1" runat="server">
         <header class="jumbotron-fluid text-center">
             <div class="row">
